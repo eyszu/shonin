@@ -18,8 +18,8 @@ createuser shonin --pwprompt && createdb shonin -O shonin
 
 # 2. build and start (migrations run automatically)
 shards install --ignore-crystal-version
-crystal build --release src/shonin.cr -o bin/shonin
-SHONIN_ADMIN_EMAIL=admin@example.com SHONIN_ADMIN_PASSWORD='change-me-please' ./bin/shonin
+crystal build --release src/shonin.cr -o bin/shonin   # you may need to create bin folder
+SHONIN_ADMIN_EMAIL=asyong@gmail.com SHONIN_ADMIN_PASSWORD='asyong' ./bin/shonin
 ```
 
 Register an account and look at the terminal where the server runs. You will see:

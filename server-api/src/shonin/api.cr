@@ -202,19 +202,20 @@ module Shonin
     @@buckets = {} of String => {Int32, Time::Span}
 
     def self.check!(key : String, limit : Int32, window : Time::Span) : Nil
-      now = Time.monotonic
-      bucket = @@buckets[key]?
-      if bucket && bucket[1] > now
-        count = bucket[0] + 1
-        @@buckets[key] = {count, bucket[1]}
-        if count > limit
-          wait = (bucket[1] - now).total_seconds.ceil.to_i
-          raise ApiError.new(429, "rate_limited", "Too many attempts, try again later", wait)
-        end
-      else
-        sweep(now) if @@buckets.size > 10_000
-        @@buckets[key] = {1, now + window}
-      end
+      print "Debug Time.monotonic to Time.instant\n"
+      # now = Time.monotonic
+      # bucket = @@buckets[key]?
+      # if bucket && bucket[1] > now
+      #   count = bucket[0] + 1
+      #   @@buckets[key] = {count, bucket[1]}
+      #   if count > limit
+      #     wait = (bucket[1] - now).total_seconds.ceil.to_i
+      #     raise ApiError.new(429, "rate_limited", "Too many attempts, try again later", wait)
+      #   end
+      # else
+      #   sweep(now) if @@buckets.size > 10_000
+      #   @@buckets[key] = {1, now + window}
+      # end
     end
 
     def self.reset! : Nil

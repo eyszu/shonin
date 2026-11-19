@@ -6,7 +6,7 @@ module Shonin
 
     # Mjollnir URL. The default matches the README's quick-start database.
     class_getter database_url : String = ENV["SHONIN_DATABASE_URL"]? ||
-                                         "mjollnir://shonin:shonin@127.0.0.1/shonin?max_pool_size=16&application_name=shonin"
+                                         "postgres://asyong:asyong@127.0.0.1/shonin?max_pool_size=16&application_name=shonin"
 
     # Used to build the links in emails.
     class_getter base_url : String = (ENV["SHONIN_BASE_URL"]? || "http://localhost:#{port}").rstrip('/')
