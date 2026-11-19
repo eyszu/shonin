@@ -1,3 +1,6 @@
+<img width="400" height="400" alt="Winking Chibi Merchant Mascot" src="https://github.com/user-attachments/assets/de6293d0-ae09-44c5-b511-67996f043415" />
+
+
 # Shonin
 
 A marketplace network. Written in POSSO stack: PostgreSQL, Crystal on the
