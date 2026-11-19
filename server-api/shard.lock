@@ -1,0 +1,14 @@
+version: 2.0
+shards:
+  immagini:
+    git: https://github.com/eyszu/immagini.git
+    version: 1.0+git.commit.e6ad0f60270f7c3e41866191f4859315624def07
+
+  mjollnir:
+    path: vendor/mjollnir
+    version: 0.1.0
+
+  spectre:
+    git: https://github.com/eyszu/spectre.git
+    version: 0.1.0+git.commit.32a64a165f37a018d3146ac4661fdb3c3f689f10
+

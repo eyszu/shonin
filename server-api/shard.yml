@@ -1,0 +1,25 @@
+name: shonin
+version: 0.1.0
+
+description: |
+  Shonin, a Shopee-style marketplace REST API in Crystal. Built on Spectre
+  (HTTP), Mjollnir (PostgreSQL) and Immagini (image processing).
+
+authors:
+  - Shonin contributors
+
+targets:
+  shonin:
+    main: src/shonin.cr
+
+dependencies:
+  spectre:
+    github: eyszu/spectre
+  immagini:
+    github: eyszu/immagini
+  mjollnir:
+    github: eyszu/mjollnir
+
+crystal: ">= 1.11.0"
+
+license: MIT
