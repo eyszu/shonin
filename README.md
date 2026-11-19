@@ -17,3 +17,17 @@ Features: email + password registration with an email-verification link (printed
 
 ## Run it
 - see README.md for each folder
+---
+
+<img width="836" height="471" alt="POSSO Tech Stack Banner" src="https://github.com/user-attachments/assets/f1615397-d9ab-4d28-bbee-a8ca7348e1b1" />
+
+---
+## Screenshots
+
+<img width="402" height="717" alt="Shonin 1" src="https://github.com/user-attachments/assets/50b81409-c72d-427f-93b8-704ffd8d4df6" />
+<img width="393" height="712" alt="Shonin 2" src="https://github.com/user-attachments/assets/b3723c56-f688-4329-8e17-b28e91f3b005" />
+
+---
+
+MIT License
+
